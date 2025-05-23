@@ -1,0 +1,18 @@
+:root {
+    --button-primary: linear-gradient(90deg, #FFC800 0%, #F7B108 90%, #F2A60D 100%);
+    --button-secondary: linear-gradient(90deg, #606060 0%, #474747 100%);
+    --amarelo-principal: #FFBB00;
+    --amarelo-secundario: #A66F00;
+    --bg-branco: #FFFFFF;
+    --bg-claro: #F7F7F7;
+    --bg-preto: #000000;
+    --bg-medio: #141414;
+    --bg-cinza: #606060;
+
+    --texto-branco: #FFFFFF;
+    --texto-preto: #000000;
+    --texto-cinza: #AEAEAE;
+    --fonte-popins: "Poppins", sans-serif;
+    --fonte-roboto: "Roboto", sans-serif;
+}
+
