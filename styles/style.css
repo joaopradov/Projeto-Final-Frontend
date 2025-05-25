@@ -12,8 +12,18 @@
     --texto-branco: #FFFFFF;
     --texto-preto: #000000;
     --texto-cinza: #AEAEAE;
+
     --fonte-popins: "Poppins", sans-serif;
     --fonte-roboto: "Roboto", sans-serif;
+
+    --fw-xxl: 600;
+    --fs-xxl: 5rem;
+
+    --fw2-l: 400;
+    --fs2-l: 2rem;
+
+    --fw1-m: 500;
+    --fs1-m: 1,125rem;
 }
 
 * {
@@ -41,27 +51,32 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 15px 80px ;
+    padding: 15px 140px ;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .navegacao {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .navegacao a {
     color: var(--texto-branco);
     text-decoration: none;
     transition: color 0.25s;
+
+    font-family: var(--fonte-popins);
+    font-size: var(--fs1-m);
+    font-weight: var(--fw1-m);
 }
 
 .navegacao a:hover {
@@ -71,7 +86,7 @@ header {
 #inicio {
     background: var(--bg-preto);
     color: var(--texto-branco);
-    padding: 100px 0 80px;
+    padding: 0 140px 30px;
     display: flex;
     align-items: center;
     position: relative;
@@ -81,39 +96,61 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    position: relative;
-}
-
-.texto-inicio {
-    padding: 0 80px;
-    text-align: justify;
+    gap: 40px;
+    max-width: calc(100vw - 280px);
+    
 }
 
 .texto-inicio h1 {
-    font-size: 3.5rem;
     margin-top: 25px;
+    max-width: 650px;
     line-height: 1;
+    font-family: var(--fonte-popins);
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-xxl);
+
+    & span{
+        color: var(--amarelo-principal);
+    }
 }
 
 .texto-inicio p {
-    font-size: 1.25rem;
+    margin-top: 40px;
     margin-bottom: 25px;
+    max-width: 475px;
+    color: var(--texto-cinza);
+    font-family: var(--fonte-roboto);
+    font-size: var(--fs2-l);
+    font-weight: var(--fw2-l);
+    text-align: justify;
 }
 
 .bttn-primario {
+    margin-top: 32px;
     background: var(--button-primary);
     color: var(--texto-preto);
     padding: 15px 30px;
     text-decoration: none;
-    text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
+
+    width: 10rem;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-family: var(--fonte-popins);
+    font-weight: bold;
+    font-size: 1,125rem;
 }
 
 .conteudo-inicio img {
-    position: absolute;
-    top: 0px;
-    right: 50px;
-    height: 200%;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    margin-bottom: -100px;
+    z-index: 5;
 }
