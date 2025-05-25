@@ -38,10 +38,10 @@ html, body {
 
 header {
     background-color: var(--bg-preto);
-    margin: 0;
-    padding: 15px 15px ;
     position: fixed;
     width: 100%;
+    z-index: 10;
+    padding: 15px 80px ;
 }
 
 .header {
@@ -53,7 +53,7 @@ header {
 .navegacao {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
@@ -66,4 +66,54 @@ header {
 
 .navegacao a:hover {
     color: var(--amarelo-principal);
+}
+
+#inicio {
+    background: var(--bg-preto);
+    color: var(--texto-branco);
+    padding: 100px 0 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.conteudo-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.texto-inicio {
+    padding: 0 80px;
+    text-align: justify;
+}
+
+.texto-inicio h1 {
+    font-size: 3.5rem;
+    margin-top: 25px;
+    line-height: 1;
+}
+
+.texto-inicio p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+
+.bttn-primario {
+    background: var(--button-primary);
+    color: var(--texto-preto);
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.conteudo-inicio img {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    height: 200%;
+    object-fit: cover;
 }
