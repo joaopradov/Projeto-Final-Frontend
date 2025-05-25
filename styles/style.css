@@ -15,3 +15,58 @@
     --fonte-popins: "Poppins", sans-serif;
     --fonte-roboto: "Roboto", sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--bg-preto);
+    margin: 0;
+    padding: 15px 15px ;
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacao {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao a {
+    color: var(--texto-branco);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.navegacao a:hover {
+    color: var(--amarelo-principal);
+}
