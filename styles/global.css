@@ -1,0 +1,53 @@
+:root {
+    --button-primary: linear-gradient(90deg, #FFC800 0%, #F7B108 90%, #F2A60D 100%);
+    --button-secondary: linear-gradient(90deg, #606060 0%, #474747 100%);
+    --amarelo-principal: #FFBB00;
+    --amarelo-secundario: #A66F00;
+    --bg-branco: #FFFFFF;
+    --bg-claro: #F7F7F7;
+    --bg-preto: #000000;
+    --bg-medio: #141414;
+    --bg-cinza: #606060;
+
+    --texto-branco: #FFFFFF;
+    --texto-preto: #000000;
+    --texto-cinza: #AEAEAE;
+
+    --fonte-popins: "Poppins", sans-serif;
+    --fonte-roboto: "Roboto", sans-serif;
+
+    --fw-xxl: 600;
+    --fs-xxl: 5rem;
+    --flh-xxl: 4,5rem;
+
+    --fw1-xl: 600;
+    --fs1-xl: 2rem;
+    --flh1-xl: 2,5rem;
+
+    --fw2-l: 400;
+    --fs2-l: 2rem;
+    --flh2-l: 2rem;
+
+    --fw1-m: 500;
+    --fs1-m: 1,125rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
