@@ -113,7 +113,8 @@ header {
 }
 
 #modelos h1 {
-    max-width: 1000px
+    max-width: 1000px;
+    margin-bottom: 40px;
 }
 
 .grid-produtos {
@@ -126,6 +127,7 @@ header {
     font-size: var(--fs1-xl);
     font-weight: var(--fw1-xl);
     line-height: var(--flh1-xl);
+    padding-bottom: 50px;
 
     & span {
         color: var(--amarelo-principal);
@@ -139,4 +141,22 @@ header {
         text-decoration: none;
         color: var(--texto-preto);
     }
+
+}
+
+#tecnologia {
+    max-height: 1132px;
+}
+
+.conteudo-tecnologia {
+    background-color: var(--bg-medio);
+    height: 960px;
+    display: flex;
+    padding: 50px 140px ;
+}
+
+.imagem-tecnologia {
+    position: relative;
+    height: 1120px;
+    top: -130px;
 }
