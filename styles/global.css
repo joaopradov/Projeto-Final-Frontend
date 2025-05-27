@@ -17,15 +17,15 @@
     --fonte-roboto: "Roboto", sans-serif;
 
     --fw-xxl: 600;
-    --fs-xxl: 5rem;
-    --flh-xxl: 4,5rem;
+    --fs-xxl: 4rem;
+    --flh-xxl: 4rem;
 
     --fw1-xl: 600;
     --fs1-xl: 2rem;
     --flh1-xl: 2,5rem;
 
     --fw2-l: 400;
-    --fs2-l: 2rem;
+    --fs2-l: 1,5rem;
     --flh2-l: 2rem;
 
     --fw1-m: 500;
@@ -39,7 +39,7 @@
 }
 
 html, body {
-    width: 1600px;
+    max-width: 100vw;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -50,4 +50,10 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
