@@ -1,5 +1,5 @@
-.hero {
-    background: var(--bg-preto);
+.hero-bicicletas {
+    background: var(--bg-medio);
     color: var(--texto-branco);
     padding: 120px 0 80px;
     display: flex;
@@ -7,9 +7,14 @@
     justify-content: flex-start;
 }
 
+.hero-texto{
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
 .hero-subtitulo {
     font-size: 1rem;
-    color: #ccc;
+    color: var(--texto-cinza);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -23,11 +28,11 @@
 
 .produtos {
     padding: 80px 0;
-    background: #f5f5f5;
+    background: var(--bg-branco);
 }
 
 .item-produto {
-    background: #fff;
+    background: var(--bg-branco);
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,7 +43,7 @@
 
 .imagem-produto {
     position: relative;
-    background: #000;
+    background: var(--bg-preto);
 }
 
 .imagem-produto img {
@@ -54,11 +59,11 @@
 .nome-produto {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #000;
+    color: var(--bg-preto);
 }
 
 .descricao-produto {
-    color: #666;
+    color: var(--texto-cinza);
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -74,42 +79,40 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #666;
+    color: var(--texto-cinza);
 }
 
-/* .icone-dado {
+.icone-dado {
     width: 20px;
     height: 20px;
-    background: #ffbb00;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    color: #000;
+    color: var(--texto-preto);
     font-weight: bold;
-} */
+}
 
 .bttn-primario {
-    background: #ffbb00;
-    color: #000;
+    background: var(--amarelo-principal);
+    color: var(--texto-preto);
     padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    transition: background 0.3s;
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
 
-.bttn-primario:hover {
-    background: #e6a600;
-}
-
-/* Alternating layout */
 .item-produto:nth-child(even) {
     direction: rtl;
+    background-color: var(--bg-medio);
+
+    & h2{
+        color: var(--texto-branco);
+    }
 }
 
 .item-produto:nth-child(even) .conteudo-produto {
@@ -117,7 +120,7 @@
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero-titulo {
         font-size: 2.5rem;
