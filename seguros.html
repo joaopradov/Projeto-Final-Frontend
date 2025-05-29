@@ -16,13 +16,14 @@
 </head>
 <body>
     
-    <main class="container">
 
-        <header>
-            <div class="header">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="">
-                </a>      
+    <header>
+        <div class="container">
+            <div class="header-conteudo">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Logo Bikcraft">
+                </a>
+
                 <nav>
                     <ul class="navegacao">
                         <li><a href="index.html">Home</a></li>
@@ -32,19 +33,36 @@
                         <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
                     </ul>
                 </nav>
+
+                <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <label for="mobile-menu-toggle" class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="navegacao-mobile">
+                    <a href="index.html">Home</a>
+                    <a href="sobre-a-empresa.html">Sobre a Empresa</a>
+                    <a href="bicicletas.html">Bicicletas</a>
+                    <a href="seguros.html">Seguros</a>
+                    <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                </nav>
+
             </div>
-        </header>
+        </div>
+    </header>
 
-
-        <footer id="footer">
-            <div class="container-footer">
-                <div class="footer-logo">
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
                     <a href="index.html">
-                        <img src="assets/logo.png" alt="logo bikcraft">
+                        <img src="assets/logo.png" alt="Logo Bikcraft">
                     </a>
                 </div>
 
-                <div class="footer-contato">
+                <div class="footer-secao">
                     <h3>Contato</h3>
                     <p>+55 33 9999-9999</p>
                     <p>contato@bikcraft.com</p>
@@ -56,24 +74,22 @@
                         <a href="#" class="youtube"><img src="assets/redes/youtube.svg" alt="Youtube"></a>
                     </div>
                 </div>
-                
 
-                <div class="footer-info">
+                <div class="footer-secao">
                     <h3>Informações</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre-a-empresa.html">Sobre a Empresa</a></li>
-                        <li><a href="bicicletas.html">Bicicletas</a></li>
-                        <li><a href="seguros.html">Seguros</a></li>
-                        <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                    </ul>
+                    <a href="index.html">Home</a>
+                    <a href="sobre-a-empresa.html">Sobre a Empresa</a>
+                    <a href="bicicletas.html">Bicicletas</a>
+                    <a href="seguros.html">Seguros</a>
+                    <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
                 </div>
             </div>
 
-            <p class="footer-copy">2025 Bikcraft © Alguns direitos reservados - Criado por João Vitor Prado</p>
-        </footer>
-
-    </main>
+            <div class="footer-baixo">
+                <p>2025 Bikcraft © Alguns direitos reservados - Criado por João Vitor Prado</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -16,12 +16,13 @@
 </head>
 <body>
     
-    <main class="container">
-        <header>
-            <div class="header">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="">
-                </a>      
+    <header>
+        <div class="container">
+            <div class="header-conteudo">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Logo Bikcraft">
+                </a>
+
                 <nav>
                     <ul class="navegacao">
                         <li><a href="index.html">Home</a></li>
@@ -31,48 +32,70 @@
                         <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
 
-        <section id="inicio">
-            <div class="conteudo-inicio">
-                <div class="texto-inicio">
+                <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <label for="mobile-menu-toggle" class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="navegacao-mobile">
+                    <a href="index.html">Home</a>
+                    <a href="sobre-a-empresa.html">Sobre a Empresa</a>
+                    <a href="bicicletas.html">Bicicletas</a>
+                    <a href="seguros.html">Seguros</a>
+                    <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-conteudo">
+                <div class="hero-texto">
                     <h1>Bicicletas feitas sob medida <span>.</span></h1>
                     <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
                     <a href="bicicletas.html" class="bttn-primario">veja mais</a>
                 </div>
-                <img src="assets/fotos/bicicleta1.png" alt="Imagem parcial de uma bicicleta.">
-            </div>
-        </section>
 
-        <section id="modelos">
-            <div class="texto-inicio">
-                <h1 >Veja nossos modelos <span>.</span></h1>
+                <div class="hero-imagem">
+                    <img src="assets/fotos/bicicleta1.png" alt="Imagem parcial de uma bicicleta.">
+                </div>
             </div>
-            
-            <div class="grid-produtos">
-                <div class="card-produtos">
-                    <a href="bicicleta-magic.html">
-                        <img src="assets/fotos/bicicleta1-2.png" alt="foto da bicicleta modelo 1" class="modelobike">
+        </div>
+    </section>
+
+    <section class="bicicletas">
+        <div class="container">
+            <h2 class="secao-titulo">Escolha a sua<span>.</span></h2>
+            <div class="secao-produtos">
+                <div class="card-produto">
+                    <a href="bicicleta-nimbus.html">
+                        <img src="assets/fotos/bicicleta1-2.png" alt="foto da bicicleta modelo 2">
                         <h3> <span>- </span>Magic Night</h3>
                     </a>
                 </div>
-                <div class="card-produtos">
+                <div class="card-produto">
                     <a href="bicicleta-nimbus.html">
-                        <img src="assets/fotos/bicicleta2.png" alt="foto da bicicleta modelo 2" class="modelobike">
+                        <img src="assets/fotos/bicicleta2.png" alt="foto da bicicleta modelo 2">
                         <h3> <span>- </span>Nimbus Stark</h3>
                     </a>
                 </div>
-                <div class="card-produtos">
-                    <a href="bicicleta-nebula.html">
-                        <img src="assets/fotos/bicicleta3.png" alt="foto da bicicleta modelo 3" class="modelobike">
+                <div class="card-produto">
+                    <a href="bicicleta-nimbus.html">
+                        <img src="assets/fotos/bicicleta3.png" alt="foto da bicicleta modelo 2">
                         <h3> <span>- </span>Nebula Cosmic</h3>
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="tecnologia">
+    <section class="tecnologia">
+        <div class="container">
             <div class="conteudo-tecnologia">
                 <div class="texto-tecnologia">
                     <strong>Tecnologia avançada</strong>
@@ -81,13 +104,13 @@
                     </p>
                     <a href="bicicletas.html"> Veja os modelos</a>
 
-                    <div class="flex ficha-tecnica">
+                    <div class="dados">
                         <div class="dado">
                             <img src="assets/icones/bike.png" alt="ícone de bicicleta">
                             <h4>Motor elétrico</h4>
                             <p>Toda Bikcraft é equipadad com um motor elétrico que possui duração de até 120h. A bateria é recarregada com sua energia gasta ao pedalar.</p>
                         </div>
-    
+
                         <div class="dado">
                             <img src="assets/icones/pointer.png" alt="ícone de um pointer">
                             <h4>Rastreador</h4>
@@ -95,87 +118,99 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="imagem-tecnologia">
                     <img src="assets/fotos/diferencial.png" alt="imagem de ferramentas">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="parceiros">
-            <div class="texto-inicio">
-                <h1>Nossos parceiros<span>.</span></h1>
-            </div>
-
-            <div class="parceiros">
-                <img src="assets/parceiros/caravan.png" alt="empresa caravan">
-                <img src="assets/parceiros/dogs.png" alt="empresa dogs">
-                <img src="assets/parceiros/flexblog.png" alt="empresa flexblog">
-                <img src="assets/parceiros/handel.png" alt="empresa handel">
-                <img src="assets/parceiros/lescone.png" alt="empresa lescone">
-                <img src="assets/parceiros/ranek.png" alt="empresa ranek">
-                <img src="assets/parceiros/surfbot.png" alt="empresa surfbot">
-                <img src="assets/parceiros/wildbeast.png" alt="empresa wildbeast">
-            </div>
-        </section>
-
-        <section id="depoimento">
-            <div class="depoimento">
-                <img src="assets/fotos/depoimento.png" alt="foto de um mulher andando" class="img-dep">
-                <div class="frase-dep">
-                    <p>
-                        <img src="assets/icones/aspas-esquerda.png" alt="aspas-esquerda" class="aspas-esquerda">
-                        Pedalar sempre foi a minha paixão, e o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade.
-                        <img src="assets/icones/aspas-direita.png" alt="aspas-direita" class="aspas-direita">
-                    </p> 
-                    <div class="nome-dep">
-                        <strong>Ana Julia</strong>
-                    </div>
+    <section class="parceiros">
+        <div class="container">
+            <h2 class="secao-titulo">Nossos parceiros<span>.</span></h2>
+            <div class="grid-parceiros">
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/caravan.png" alt="Caravan">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/ranek.png" alt="Ranek">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/handel.png" alt="Handel">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/dogs.png" alt="Dogs">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/lescone.png" alt="LeScone">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/flexblog.png" alt="FlexBlog">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/wildbeast.png" alt="Wildbeast">
+                </div>
+                <div class="logo-parceiro">
+                    <img src="assets/parceiros/surfbot.png" alt="Surfbot">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="seguro">
-            <div class="texto-inicio">
-                <h1>Seguros<span>.</span></h1>
+    <section class="depoimento">
+        <div class="container">
+            <div class="conteudo-depoimento">
+                <div class="imagem-depoimento">
+                    <img src="assets/fotos/depoimento.png" alt="foto de um mulher andando">
+                </div>
+
+                <div class="texto-depoimento">
+                    <p>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
+                    <p class="autor-depoimento">Ana Júlia</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="seguros">
-                <div class="tipo-seg">
-                    <h2 class="prata">Prata</h2>
-                    <ul class="lista-beneficios">
-                        <li class="beneficio">Assistência técnica</li>
-                        <li class="beneficio">Cobertura estadual</li>
-                        <li class="beneficio">Duas trocas por ano</li>
-                        <li class="beneficio">Suporte 08h às 18h</li>
+    <section class="seguros">
+        <div class="container">
+            <h2 class="secao-titulo-2">Seguros<span>.</span></h2>
+            <div class="bloco-planos">
+                <div class="bloco-seguro">
+                    <h3 class="nome-plano prata">Prata</h3>
+                    <ul class="beneficios">
+                        <li>Duas trocas por ano</li>
+                        <li>Assistência técnica</li>
+                        <li>Suporte 08h às 18h</li>
+                        <li>Cobertura estadual</li>
                     </ul>
                 </div>
-
-                <div class="tipo-seg">
-                    <h2 class="ouro">Ouro</h2>
-                    <ul class="lista-beneficios">
-                        <li class="beneficio">Acesso ao Clube Bikcraft</li>
-                        <li class="beneficio">Assistência especial</li>
-                        <li class="beneficio">Cinco trocas por ano</li>
-                        <li class="beneficio">Cobertura nacional</li>
-                        <li class="beneficio">Desconto em parceiros</li>
-                        <li class="beneficio">Suporte 24h</li>
+                <div class="bloco-seguro">
+                    <h3 class="nome-plano ouro">Ouro</h3>
+                    <ul class="beneficios">
+                        <li>Cinco trocas por ano</li>
+                        <li>Assistência especial</li>
+                        <li>Suporte 24h</li>
+                        <li>Cobertura nacional</li>
+                        <li>Desconto em parceiros</li>
+                        <li>Acesso ao Clube Bikcraft</li>
                     </ul>
                 </div>
-                
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <footer id="footer">
-            <div class="container-footer">
-                <div class="footer-logo">
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
                     <a href="index.html">
-                        <img src="assets/logo.png" alt="logo bikcraft">
+                        <img src="assets/logo.png" alt="Logo Bikcraft">
                     </a>
                 </div>
 
-                <div class="footer-contato">
+                <div class="footer-secao">
                     <h3>Contato</h3>
                     <p>+55 33 9999-9999</p>
                     <p>contato@bikcraft.com</p>
@@ -187,24 +222,23 @@
                         <a href="#" class="youtube"><img src="assets/redes/youtube.svg" alt="Youtube"></a>
                     </div>
                 </div>
-                
 
-                <div class="footer-info">
+                <div class="footer-secao">
                     <h3>Informações</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre-a-empresa.html">Sobre a Empresa</a></li>
-                        <li><a href="bicicletas.html">Bicicletas</a></li>
-                        <li><a href="seguros.html">Seguros</a></li>
-                        <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                    </ul>
+                    <a href="index.html">Home</a>
+                    <a href="sobre-a-empresa.html">Sobre a Empresa</a>
+                    <a href="bicicletas.html">Bicicletas</a>
+                    <a href="seguros.html">Seguros</a>
+                    <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
                 </div>
             </div>
 
-            <p class="footer-copy">2025 Bikcraft © Alguns direitos reservados - Criado por João Vitor Prado</p>
-        </footer>
+            <div class="footer-baixo">
+                <p>2025 Bikcraft © Alguns direitos reservados - Criado por João Vitor Prado</p>
+            </div>
+        </div>
+    </footer>
 
-    </main>
     
 </body>
 </html>
