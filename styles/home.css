@@ -2,7 +2,7 @@
     background-color: var(--bg-preto);
     color: var(--texto-branco);
     padding: 120px 0 80px;
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
 }
