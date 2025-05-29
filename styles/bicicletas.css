@@ -1,4 +1,4 @@
-.hero-bicicletas {
+.hero-2 {
     background: var(--bg-medio);
     color: var(--texto-branco);
     padding: 120px 0 80px;
@@ -82,7 +82,7 @@
     color: var(--texto-cinza);
 }
 
-.icone-dado {
+/* .icone-dado {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -92,7 +92,7 @@
     font-size: 12px;
     color: var(--texto-preto);
     font-weight: bold;
-}
+} */
 
 .bttn-primario {
     background: var(--amarelo-principal);
