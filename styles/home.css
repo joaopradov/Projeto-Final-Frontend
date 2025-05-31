@@ -388,8 +388,437 @@
     -webkit-text-fill-color: transparent
 }
 
+/* ======== CELULARES PEQUENOS (até 575px) ======== */
+@media (max-width: 575px) {
+    html, body {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
 
-@media (max-width: 768px){
+    .hero {
+        padding: 80px 0 80px; /* Espaço extra no final para o botão */
+        text-align: center;
+    }
+
+    .hero-conteudo,
+    .conteudo-depoimento {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-texto h1,
+    .hero-texto h1 span,
+    .secao-titulo,
+    .secao-titulo span,
+    .secao-titulo-2,
+    .secao-titulo-2 span {
+        font-size: calc(var(--fs-xxl) - 1.25rem);
+        line-height: 1.8rem;
+        font-weight: 600;
+    }
+
+    .hero-texto p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .hero-imagem,
+    .imagem-tecnologia {
+        display: none; /* Imagens ocultas em celulares */
+    }
+
+    .conteudo-tecnologia {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .imagem-tecnologia {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .texto-tecnologia h1,
+    .texto-tecnologia p,
+    .texto-tecnologia strong,
+    .texto-tecnologia a {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+
+    .header-dado,
+    .header-dado-2 {
+        justify-content: center;
+    }
+
+    .bttn-primario {
+        padding: 12px 24px;
+        margin-bottom: 30px; /* Espaço extra abaixo do botão */
+    }
+
+    /* Evitar scroll horizontal */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* ======== CELULARES MÉDIOS (576px a 767px) ======== */
+@media (min-width: 576px) and (max-width: 767px) {
+    html, body {
+        overflow-x: hidden;
+        font-size: 14.5px;
+    }
+
+    .hero {
+        padding: 80px 0 70px;
+        text-align: center;
+    }
+
+    .hero-conteudo,
+    .conteudo-depoimento {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-texto h1,
+    .hero-texto h1 span,
+    .secao-titulo,
+    .secao-titulo span,
+    .secao-titulo-2,
+    .secao-titulo-2 span {
+        font-size: calc(var(--fs-xxl) - 1rem);
+        line-height: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .hero-texto p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .hero-imagem,
+    .imagem-tecnologia {
+        display: none; /* Ocultar imagens em celulares */
+    }
+
+    .conteudo-tecnologia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .texto-tecnologia h1 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .texto-tecnologia p,
+    .texto-tecnologia strong,
+    .texto-tecnologia a {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .dados {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bttn-primario {
+        padding: 12px 24px;
+        margin-bottom: 20px; /* Espaço extra para o botão */
+    }
+
+    /* Evitar scroll horizontal */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* ======== TABLETS (768px a 1024px) ======== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+        font-size: 15px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Seção Hero */
+    .hero {
+        padding: 100px 0 70px;
+        max-height: none;
+    }
+
+    .hero-conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+    }
+
+    .hero-texto p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-weight: 400;
+    }
+
+    .hero-imagem {
+        display: block;
+        max-width: 100%;
+    }
+
+    .bttn-primario {
+        margin-bottom: 20px;
+        padding: 12px 28px;
+    }
+
+    /* Títulos gerais */
+    .secao-titulo,
+    .secao-titulo-2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    /* Seção Depoimento e Parceiros */
+    .conteudo-depoimento {
+        gap: 40px;
+    }
+
+    .grid-parceiros {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+    }
+
+    /* Seção Produtos */
+    .secao-produtos {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .card-produto img {
+        height: 260px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* Seção Planos */
+    .bloco-planos {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    /* Seção Tecnologia */
+    .tecnologia {
+        padding: 60px 0;
+        max-height: none;
+    }
+
+    .conteudo-tecnologia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .imagem-tecnologia {
+        display: block;
+        max-width: 100%;
+    }
+
+    .imagem-tecnologia img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .texto-tecnologia h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .texto-tecnologia p,
+    .texto-tecnologia strong,
+    .texto-tecnologia a {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .dados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .container,
+    .hero-conteudo,
+    .conteudo-tecnologia {
+        width: 100%;
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    html, body {
+        font-size: 16px; /* Base de fonte confortável */
+        overflow-x: hidden; /* Evitar scroll horizontal */
+    }
+
+    .container,
+    .hero-conteudo,
+    .conteudo-tecnologia {
+        max-width: 1200px; /* Limita largura para não ficar muito esticado */
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 120px 0 100px;
+        max-height: none;
+    }
+
+    .hero-conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        font-weight: 700;
+    }
+
+    .hero-texto p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+    }
+
+    .hero-imagem {
+        display: block;
+        max-width: 100%;
+    }
+
+    .bttn-primario {
+        padding: 16px 36px;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+    }
+
+    /* Seção Tecnologia */
+    .tecnologia {
+        padding: 80px 0;
+    }
+
+    .conteudo-tecnologia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .imagem-tecnologia {
+        max-width: 100%;
+    }
+
+    .imagem-tecnologia img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .texto-tecnologia h1 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .texto-tecnologia p,
+    .texto-tecnologia strong,
+    .texto-tecnologia a {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    /* Ajustes gerais */
+    .secao-titulo,
+    .secao-titulo-2 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    /* Grid parceiros maior espaçamento */
+    .grid-parceiros {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 64px;
+    }
+
+    /* Produtos */
+    .secao-produtos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    .card-produto img {
+        height: 320px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* Planos */
+    .bloco-planos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    /* Depoimentos */
+    .texto-depoimento {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .autor-depoimento {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* @media (max-width: 768px){
     .hero-conteudo,
     .conteudo-tecnologia,
     .conteudo-depoimento {
@@ -417,3 +846,4 @@
         font-size: 0.9rem;
     }
 }
+ */
