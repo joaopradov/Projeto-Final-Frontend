@@ -16,6 +16,24 @@
 
     --fonte-popins: "Poppins", sans-serif;
     --fonte-roboto: "Roboto", sans-serif;
+
+    --fs-xxl: 4rem;
+    --fs-xl: 2rem;
+    --fs-l-b: 1.5rem;
+    --fs-m: 1.125rem;
+    --fs-s: 1rem;
+    
+
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+
+    --lh-xxl: 4.5rem;
+    --lh-xl: 2.5rem;
+    --lh-l-b: 2.25rem;
+    --lh-m: 1.5rem;
+
 }
 
 * {
