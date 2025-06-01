@@ -139,15 +139,6 @@
     line-height: var(--lh-xl);
 }
 
-.card-produto span{
-    margin-bottom: 10px;
-
-    font-family: var(--fonte-popins);
-    font-size: var(--fs-xl);
-    font-weight: var(--fw-semibold);
-    line-height: var(--lh-xl);
-}
-
 .tecnologia {
     background-color: var(--bg-preto);
     color: var(--texto-branco);
@@ -388,7 +379,7 @@
     -webkit-text-fill-color: transparent
 }
 
-/* ======== CELULARES PEQUENOS (até 575px) ======== */
+/* CELULARES PEQUENOS */
 @media (max-width: 575px) {
     html, body {
         overflow-x: hidden;
@@ -396,8 +387,9 @@
     }
 
     .hero {
-        padding: 80px 0 80px; /* Espaço extra no final para o botão */
-        text-align: center;
+        padding: 80px 0 80px;
+        text-align: left;
+        height: 80vh;
     }
 
     .hero-conteudo,
@@ -414,13 +406,15 @@
     .secao-titulo-2,
     .secao-titulo-2 span {
         font-size: calc(var(--fs-xxl) - 1.25rem);
-        line-height: 1.8rem;
+        line-height: 3rem;
         font-weight: 600;
+        text-align: left;
     }
 
     .hero-texto p {
         font-size: 1rem;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
+        max-width: 250px;
     }
 
     .hero-imagem,
@@ -439,7 +433,12 @@
         margin-bottom: 30px;
     }
 
-    .texto-tecnologia h1,
+    .texto-tecnologia h1{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
     .texto-tecnologia p,
     .texto-tecnologia strong,
     .texto-tecnologia a {
@@ -447,6 +446,7 @@
         font-size: 1.1rem;
         line-height: 1.5rem;
         font-weight: 400;
+        text-align: justify;
     }
 
     .header-dado,
@@ -454,19 +454,18 @@
         justify-content: center;
     }
 
+
     .bttn-primario {
         padding: 12px 24px;
-        margin-bottom: 30px; /* Espaço extra abaixo do botão */
+        margin-bottom: 10px;
+        
     }
 
-    /* Evitar scroll horizontal */
-    html, body {
-        overflow-x: hidden;
-    }
+    
 }
 
-/* ======== CELULARES MÉDIOS (576px a 767px) ======== */
-@media (min-width: 576px) and (max-width: 767px) {
+/*CELULARES MÉDIOS*/
+/* @media (min-width: 576px) and (max-width: 767px) {
     html, body {
         overflow-x: hidden;
         font-size: 14.5px;
@@ -503,7 +502,7 @@
 
     .hero-imagem,
     .imagem-tecnologia {
-        display: none; /* Ocultar imagens em celulares */
+        display: none;
     }
 
     .conteudo-tecnologia {
@@ -534,16 +533,12 @@
 
     .bttn-primario {
         padding: 12px 24px;
-        margin-bottom: 20px; /* Espaço extra para o botão */
+        margin-bottom: 20px;
     }
 
-    /* Evitar scroll horizontal */
-    html, body {
-        overflow-x: hidden;
-    }
-}
+} */
 
-/* ======== TABLETS (768px a 1024px) ======== */
+/*TABLETS*/
 @media (min-width: 768px) and (max-width: 1024px) {
     html, body {
         overflow-x: hidden;
@@ -554,7 +549,21 @@
         box-sizing: border-box;
     }
 
-    /* Seção Hero */
+    .secao-titulo,
+    .secao-titulo-2 {
+        font-size: var(--fs-xl);
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .container,
+    .hero-conteudo,
+    .conteudo-tecnologia {
+        width: 100%;
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+
     .hero {
         padding: 100px 0 70px;
         max-height: none;
@@ -569,7 +578,7 @@
 
     .hero-texto h1 {
         font-size: 2rem;
-        line-height: 2.4rem;
+        line-height: 0.1rem;
         font-weight: 700;
     }
 
@@ -589,28 +598,8 @@
         padding: 12px 28px;
     }
 
-    /* Títulos gerais */
-    .secao-titulo,
-    .secao-titulo-2 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 32px;
-        text-align: center;
-    }
-
-    /* Seção Depoimento e Parceiros */
-    .conteudo-depoimento {
-        gap: 40px;
-    }
-
-    .grid-parceiros {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 48px;
-    }
-
-    /* Seção Produtos */
     .secao-produtos {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
 
@@ -618,15 +607,16 @@
         height: 260px;
         width: 100%;
         object-fit: contain;
+        margin-bottom: 0;
     }
 
-    /* Seção Planos */
-    .bloco-planos {
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
+    .card-produto h3{
+        font-family: var(--fonte-popins);
+        font-size: 1.25rem;
+        font-weight: var(--fw-semibold);
+        line-height: var(--lh-xl);
     }
 
-    /* Seção Tecnologia */
     .tecnologia {
         padding: 60px 0;
         max-height: none;
@@ -652,7 +642,8 @@
     }
 
     .texto-tecnologia h1 {
-        font-size: 1.8rem;
+        margin-top: 20px;
+        font-size: 1.5rem;
         line-height: 2.2rem;
         font-weight: 600;
         text-align: left;
@@ -662,7 +653,7 @@
     .texto-tecnologia strong,
     .texto-tecnologia a {
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 1rem;
         font-weight: 400;
         text-align: left;
     }
@@ -670,80 +661,73 @@
     .dados {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 40px;
     }
 
-    .container,
-    .hero-conteudo,
-    .conteudo-tecnologia {
-        width: 100%;
-        padding: 0 24px;
-        margin: 0 auto;
+    .conteudo-depoimento {
+        gap: 40px;
+    }
+
+    .grid-parceiros {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 48px;
+    }
+
+
+    
+
+    
+
+    .bloco-planos {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
     }
 }
 
 
 @media (min-width: 1281px) {
     html, body {
-        font-size: 16px; /* Base de fonte confortável */
-        overflow-x: hidden; /* Evitar scroll horizontal */
+        overflow-x: hidden; 
     }
 
-    .container,
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
     .hero-conteudo,
     .conteudo-tecnologia {
-        max-width: 1200px; /* Limita largura para não ficar muito esticado */
-        margin: 0 auto;
-        padding: 0 24px;
+        max-width: 100%;
+        margin: 0 0;
+        grid-template-columns: repeat(2, 1fr);
+        right: 0;
+        width: 100%;
     }
 
-    /* Hero */
     .hero {
         padding: 120px 0 100px;
-        max-height: none;
+        max-height: 100vh;
     }
 
-    .hero-conteudo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 48px;
-        align-items: center;
+    .hero-texto p{
+        max-width: 550px;
     }
 
-    .hero-texto h1 {
-        font-size: 3.2rem;
-        line-height: 3.6rem;
-        font-weight: 700;
-    }
-
-    .hero-texto p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        font-weight: 400;
-    }
-
-    .hero-imagem {
-        display: block;
+    .hero-imagem img {
         max-width: 100%;
+        width: auto;
+        height: auto;
     }
 
-    .bttn-primario {
-        padding: 16px 36px;
-        margin-bottom: 40px;
-        font-size: 1.1rem;
-        border-radius: 6px;
-    }
-
-    /* Seção Tecnologia */
     .tecnologia {
         padding: 80px 0;
     }
 
-    .conteudo-tecnologia {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 48px;
-        align-items: center;
+    .texto-tecnologia p{
+        max-width: 650px;
+        text-align: justify;
     }
 
     .imagem-tecnologia {
@@ -752,98 +736,22 @@
 
     .imagem-tecnologia img {
         width: 100%;
-        max-height: 500px;
-        object-fit: contain;
+        max-height: 80vh;
         height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+
+        left: auto;
     }
 
-    .texto-tecnologia h1 {
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-        font-weight: 700;
-        text-align: left;
-    }
-
-    .texto-tecnologia p,
-    .texto-tecnologia strong,
-    .texto-tecnologia a {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        font-weight: 400;
-        text-align: left;
-    }
-
-    /* Ajustes gerais */
-    .secao-titulo,
-    .secao-titulo-2 {
-        font-size: 2.8rem;
-        font-weight: 700;
-        margin-bottom: 48px;
-        text-align: center;
-    }
-
-    /* Grid parceiros maior espaçamento */
     .grid-parceiros {
         grid-template-columns: repeat(4, 1fr);
         gap: 64px;
     }
 
-    /* Produtos */
-    .secao-produtos {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-    }
-
-    .card-produto img {
-        height: 320px;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    /* Planos */
     .bloco-planos {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-    }
-
-    /* Depoimentos */
-    .texto-depoimento {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-    }
-
-    .autor-depoimento {
-        font-size: 1.6rem;
-    }
-}
-
-
-/* @media (max-width: 768px){
-    .hero-conteudo,
-    .conteudo-tecnologia,
-    .conteudo-depoimento {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
 }
-
-@media (max-width: 480px) {
-    .hero-texto h1 {
-        font-size: 2rem;
-    }
-
-    .hero-texto p {
-        font-size: 1rem;
-    }
-
-    .bttn-primario,
-    .bttn-secundario {
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-}
- */
