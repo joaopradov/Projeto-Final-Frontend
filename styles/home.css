@@ -379,7 +379,7 @@
     -webkit-text-fill-color: transparent
 }
 
-/* CELULARES PEQUENOS */
+/* CELULARES*/
 @media (max-width: 575px) {
     html, body {
         overflow-x: hidden;
@@ -463,80 +463,6 @@
 
     
 }
-
-/*CELULARES MÉDIOS*/
-/* @media (min-width: 576px) and (max-width: 767px) {
-    html, body {
-        overflow-x: hidden;
-        font-size: 14.5px;
-    }
-
-    .hero {
-        padding: 80px 0 70px;
-        text-align: center;
-    }
-
-    .hero-conteudo,
-    .conteudo-depoimento {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .hero-texto h1,
-    .hero-texto h1 span,
-    .secao-titulo,
-    .secao-titulo span,
-    .secao-titulo-2,
-    .secao-titulo-2 span {
-        font-size: calc(var(--fs-xxl) - 1rem);
-        line-height: 2rem;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .hero-texto p {
-        font-size: 1.1rem;
-        line-height: 1.6rem;
-    }
-
-    .hero-imagem,
-    .imagem-tecnologia {
-        display: none;
-    }
-
-    .conteudo-tecnologia {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .texto-tecnologia h1 {
-        font-size: 1.4rem;
-        font-weight: 600;
-        text-align: left;
-    }
-
-    .texto-tecnologia p,
-    .texto-tecnologia strong,
-    .texto-tecnologia a {
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: left;
-    }
-
-    .dados {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .bttn-primario {
-        padding: 12px 24px;
-        margin-bottom: 20px;
-    }
-
-} */
 
 /*TABLETS*/
 @media (min-width: 768px) and (max-width: 1024px) {
