@@ -213,7 +213,7 @@ span{
     color: var(--amarelo-principal);
 }
 
-@media (max-width: 574px){
+@media (max-width: 574px) {
     .footer-conteudo{
         grid-template-columns: 1fr;
     }
