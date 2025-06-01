@@ -599,17 +599,11 @@
         gap: 48px;
     }
 
-
-    
-
-    
-
     .bloco-planos {
         grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
 }
-
 
 @media (min-width: 1281px) {
     html, body {

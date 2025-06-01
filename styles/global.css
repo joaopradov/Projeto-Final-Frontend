@@ -13,6 +13,7 @@
     --texto-branco: #FFFFFF;
     --texto-preto: #000000;
     --texto-cinza: #AEAEAE;
+    --texto-cinza2: #464646;
 
     --fonte-popins: "Poppins", sans-serif;
     --fonte-roboto: "Roboto", sans-serif;
@@ -212,7 +213,25 @@ span{
     color: var(--amarelo-principal);
 }
 
-@media (max-width: 768px){
+@media (max-width: 574px){
+    .footer-conteudo{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px){
+    .footer-conteudo{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .footer-conteudo{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1024px){
     .navegacao {
         display: none;
     }

@@ -7,25 +7,25 @@
     justify-content: flex-start;
 }
 
-.hero-texto{
+.hero-texto2{
     margin-top: 20px;
     margin-bottom: -40px;
 }
 
 .hero-subtitulo {
-    font-size: 1rem;
-    font-family: var(--fonte-roboto);
     color: var(--texto-cinza);
+    font-family: var(--fonte-roboto);
+    font-size: var(--fs-l-b);
+    font-weight: var(--fw-medium);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    line-height: 2rem;
 }
 
 .hero-titulo {
-    font-family: var(--fonte-roboto);
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.1;
+    font-family: var(--fonte-popins);
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-xxl);
 }
 
 .produtos {
@@ -56,13 +56,19 @@
 
 .conteudo-produto {
     padding: 60px 40px;
+
+    & p{
+    color: var(--texto-cinza2);
+    }
 }
 
 .nome-produto {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-family: var(--fonte-popins);
     color: var(--bg-preto);
-    font-family: var(--fonte-roboto);
+    font-size: 2.25rem;
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-xl);
+    margin-bottom: 20px;
 
     & span{
         color: var(--amarelo-principal);
@@ -70,11 +76,12 @@
 }
 
 .descricao-produto {
-    color: var(--texto-cinza);
-    margin-bottom: 30px;
-    line-height: 1.6;
-    font-family: var(--fonte-popins);
+    font-family: var(--fonte-roboto);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-m);
     text-align: justify;
+    margin-bottom: 30px;
 }
 
 .dados-produto {
@@ -84,35 +91,36 @@
     margin-bottom: 40px;
 }
 
-.dado {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--texto-cinza);
-
-    & strong{
-        font-family: var(--fonte-roboto);
-    }
-}
-
 .icone-dado {
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
+}
+
+.header-dado,
+.header-dado-2{
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+
+    font-family: var(--fonte-roboto);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-m);
+    line-height: var(--lh-m);
+
+    color: var(--texto-cinza2);
 }
 
 .bttn-primario {
     background: var(--amarelo-principal);
     color: var(--texto-preto);
     padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
+
     text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+    text-decoration: none;
+    font-family: var(--fonte-popins);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-m);
 }
 
 .item-produto:nth-child(even) {
@@ -122,6 +130,22 @@
     & h2{
         color: var(--texto-branco);
     }
+
+    & p{
+        color: var(--texto-cinza);
+    }
+
+    & strong{
+        color: var(--texto-cinza);
+    }
+}
+
+.item-produto:nth-child(even) .dados-produto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+    justify-content: left;
 }
 
 .item-produto:nth-child(even) .conteudo-produto {
@@ -129,8 +153,7 @@
 }
 
 
-
-@media (max-width: 768px) {
+@media (max-width: 575px){
     .hero-titulo {
         font-size: 2.5rem;
     }
@@ -139,32 +162,40 @@
         grid-template-columns: 1fr;
         margin-bottom: 60px;
     }
-
-    .item-produto:nth-child(even) {
-        direction: ltr;
-    }
-
     .conteudo-produto {
-        padding: 40px 30px;
+        padding: 30px 20px;
     }
-
+    .imagem-produto img {
+        height: 300px;
+    }
     .nome-produto {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    .bttn-primario {
+        padding: 12px 20px;
+        font-size: var(--fs-s);
     }
 
-    .dados-produto {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    .header-dado,
+    .header-dado-2{
+        font-size: var(--fs-s);
     }
+
+    .header-dado-2{
+        justify-content: flex-start;
+    }
+        
+
 }
 
-@media (max-width: 480px) {
-    .hero-titulo {
-        font-size: 2rem;
-    }
+@media (min-width: 768px) and (max-width: 1024px){
 
     .conteudo-produto {
         padding: 30px 20px;
+    }
+
+    .imagem-produto img {
+        height: 300px;
     }
 
     .nome-produto {
@@ -175,8 +206,4 @@
         padding: 12px 20px;
         font-size: 0.9rem;
     }
-
-    .imagem-produto img {
-        height: 300px;
-    }
-}
+}   
