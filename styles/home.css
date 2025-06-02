@@ -477,7 +477,6 @@
 
     .secao-titulo,
     .secao-titulo-2 {
-        font-size: var(--fs-xl);
         margin-bottom: 32px;
         text-align: left;
     }
