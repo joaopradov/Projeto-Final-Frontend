@@ -193,8 +193,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    font-size: 2rem;
+
+    & img{
+        width: 40px;
+    }
 }
+
 
 .item-qualidade h3 {
     font-size: 1.5rem;
