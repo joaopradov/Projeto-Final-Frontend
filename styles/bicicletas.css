@@ -154,10 +154,6 @@
 
 
 @media (max-width: 575px){
-    .hero-titulo {
-        font-size: 2.5rem;
-    }
-
     .item-produto {
         grid-template-columns: 1fr;
         margin-bottom: 60px;

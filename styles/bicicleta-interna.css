@@ -285,10 +285,6 @@
         margin-bottom: 0;
     }
 
-    .titulo-secao {
-        font-size: 3rem;
-    }
-
     .grid-dados {
         grid-template-columns: 1fr 1fr;
     }

@@ -501,12 +501,6 @@
         align-items: center;
     }
 
-    .hero-texto h1 {
-        font-size: 2rem;
-        line-height: 0.1rem;
-        font-weight: 700;
-    }
-
     .hero-texto p {
         font-size: 1.1rem;
         line-height: 1.6rem;
