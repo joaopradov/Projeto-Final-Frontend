@@ -1,6 +1,8 @@
 # Projeto Final - Frontend
 
-Este repositório contém o projeto final desenvolvido para a disciplina de Front-End da faculdade. O objetivo é aplicar os conhecimentos adquiridos ao longo do curso na criação de um site institucional fictício para uma empresa de bicicletas.
+Este repositório contém o projeto final desenvolvido para a disciplina de Front-End da faculdade. O objetivo é aplicar os conhecimentos adquiridos ao longo do curso na criação de um site institucional fictício para uma empresa de bicicletas. <br>
+
+|Demo Projeto |  [🌐 Ver Projeto](https://joaopradov.github.io/Projeto-Final-Frontend) |<br>
 
 ## 📄 Descrição
 
